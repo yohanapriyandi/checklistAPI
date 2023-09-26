@@ -23,7 +23,7 @@ class AuthController extends Controller
                 'email'             => 'required|email|max:100',
                 'password'          => 'required|max:255'
             ]);
-    
+            // validate response
             if ($validator->fails()) {
                 return response()->json(
                     [
